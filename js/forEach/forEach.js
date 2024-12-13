@@ -15,15 +15,15 @@ let frutis = ["apple","orange","banana","coconut"]
 
 // numbers.forEach(display)
 
-// function double(element,index,array) {
-//     array[index] = element * 2 ;
-// }
+function double(element,index,array) {
+    array[index] = element * 2 ;
+}
 
-// function display(index) {
-//     console.log(index)
-// }
+function display(index) {
+    console.log(index)
+}
 
-// display();
+display();
 
 frutis.forEach(capitalize)
 frutis.forEach(display)

@@ -1,9 +1,9 @@
 // function declaraion = define a reusable a bloc of code
 //                       that performs a specific task
 
-// function hello() {
-//     console.log("hello")
-// }
+function hello() {
+    console.log("hello")
+}
 
 // function expression = a way to define function as 
 //                       value or variables 
