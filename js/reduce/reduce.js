@@ -26,3 +26,26 @@ console.log(minNumbers)
 function getMin(a,b) {
     return Math.min(a,b)
 }
+
+const store = [
+    {
+        product : "laptop",
+        value : 1000,
+        count : 3
+    },
+    {
+        product : "desktop",
+        value : 1500,
+        count : 3
+    },
+    {
+        product : "laptop",
+        value : 500,
+        count : 3
+    }
+];
+
+const totalValueStore = store.reduce(
+    (acc,item) => acc + (item.value * item.count),0 
+)
+console.log(totalValueStore)

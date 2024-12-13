@@ -48,10 +48,18 @@ const fruits = [
 
 // ---------------------------------------------------
 
-const numbers = [1,2,2,2,4,4,5,7,7,1] 
+// const numbers = [1,2,2,2,4,4,5,7,7,1] 
 
-const result = numbers.filter((value,index,arry) => {
-    return arry.indexOf(value) === index  ;
-})
+// const result = numbers.filter((value,index,arr) => {
+//     return arr.indexOf(value) === index ;
+// })
+
+// console.log(result)
+
+// --------------------------------------------------------
+
+let numbers = [2,3,2,2,33,3,4,4,1,4,6,9,8,9] 
+let b = []
+
 
 console.log(numbers)
