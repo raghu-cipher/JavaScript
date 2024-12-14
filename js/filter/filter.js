@@ -1,60 +1,60 @@
 //.filter() = create a new array by filtering 
 //             out elements 
 
-// let numbers = [1,2,3,4,5,6,7] 
+let numbers = [1,2,3,4,5,6,7] 
 
-// let evenNumbers = numbers.filter(isEven)
-// console.log(evenNumbers)
+let evenNumbers = numbers.filter(isEven)
+console.log(evenNumbers)
 
-// function isEven(element) {
-//     return element % 2  === 0 ;   // moudules " % "
+function isEven(element) {
+    return element % 2  === 0 ;   // moudules " % "
 
-// }
+}
 
-// let oddNumbers = numbers.filter(isOdd)
-// console.log(oddNumbers)
+let oddNumbers = numbers.filter(isOdd)
+console.log(oddNumbers)
 
-// function isOdd(element) {
-//     return element % 2 !== 0 ;
-// }
+function isOdd(element) {
+    return element % 2 !== 0 ;
+}
 
-// const ages = [16,17,18,19,20,60] ;
+const ages = [16,17,18,19,20,60] ;
 
-// const adults = ages.filter(isAdult)
-// const children = ages.filter(isChild)
-// console.log(children)
+const adults = ages.filter(isAdult)
+const children = ages.filter(isChild)
+console.log(children)
 
-// function isAdult(element) {
-//     return element >= 18; 
-// }
+function isAdult(element) {
+    return element >= 18; 
+}
 
 
 
-// function isChild(element) {
-//     return element < 18 ;
-// }
+function isChild(element) {
+    return element < 18 ;
+}
 
-// const words = ["apple",'orange','banana','kiwi','pomegranate','coconut'];
+const words = ["apple",'orange','banana','kiwi','pomegranate','coconut'];
 
-// const shortWords = words.filter(getShortWords)
-// const longWords = words.filter(getLongWords);
+const shortWords = words.filter(getShortWords)
+const longWords = words.filter(getLongWords);
 
-// console.log(longWords)
+console.log(longWords)
 
-// function getShortWords(element) {
-//     return element.length <=6 ;
-// }
+function getShortWords(element) {
+    return element.length <=6 ;
+}
 
-// function getLongWords(element) {
-//     return element.length > 6 ;
-// }
+function getLongWords(element) {
+    return element.length > 6 ;
+}
 
 //-------------------------------------------------------------------------------
 
-// const numbers = [1,4,9,16,25] ;
-// const evenNumbers = numbers.filter((eachNum) => eachNum % 2 === 0 ) ;
-// const oddNumbers = numbers.filter((eachNum) => eachNum % 2 !== 0  ) ;
-// console.log(oddNumbers)
+const numbers1 = [1,4,9,16,25] ;
+const evenNumbers1 = numbers.filter((eachNum) => eachNum % 2 === 0 ) ;
+const oddNumbers1 = numbers.filter((eachNum) => eachNum % 2 !== 0  ) ;
+console.log(oddNumbers)
 
 const users = [
     {userName : "dcode", active : true},
@@ -62,47 +62,47 @@ const users = [
     {userName : "alex95", active : true},
 ]
 
-// const activeUsers = users.filter((eachUser) => eachUser.active === true) ;
-// const delteUser = "alex95";
-// const updatedList = users.filter(user => user.userName !== delteUser);
-// console.log(updatedList)
+const activeUsers = users.filter((eachUser) => eachUser.active === true) ;
+const delteUser = "alex95";
+const updatedList = users.filter(user => user.userName !== delteUser);
+console.log(updatedList)
 
 // ----filter gives the new Array 
 
-// const userNameToFind = "dcode" ;
-// const user = users.filter(user => user.userName === userNameToFind) ;
-// console.log(user) ;
+const userNameToFind = "dcode" ;
+const user = users.filter(user => user.userName === userNameToFind) ;
+console.log(user) ;
 
-// const userNameToFind = "dcode1" ;
-// const user = users.filter(user => user.userName === userNameToFind) ;
-// console.log(user) ; // ----- undefined 
+const userNameToFind1 = "dcode1" ;
+const user1 = users.filter(user => user.userName === userNameToFind) ;
+console.log(user) ; // ----- undefined 
 
 // ---------find --- it gives the Object  
 
-// const userNameToFind = "dcode1" ;
-// const user = users.find(user => user.userName === userNameToFind) ;
-// console.log(user) ; 
+const userNameToFind2 = "dcode1" ;
+const user2 = users.find(user => user.userName === userNameToFind) ;
+console.log(user) ; 
 
-// const userNameToFind = "alex95" ;
-// const user = users.findIndex(user => user.userName === userNameToFind) ;
-// console.log(user) ; // ------: 2 
+const userNameToFind3 = "alex95" ;
+const user3 = users.findIndex(user => user.userName === userNameToFind) ;
+console.log(user) ; // ------: 2 
 
-// const userNameToFind = "alex951" ;
-// const user = users.findIndex(user => user.userName === userNameToFind) ;
-// console.log(user) ; //------- : -1 
+const userNameToFind4 = "alex951" ;
+const user4 = users.findIndex(user => user.userName === userNameToFind) ;
+console.log(user) ; //------- : -1 
 
 //-----------------------------------------------------------------------------------
 
-// const students = [
-//     {name : "A", Mark : 98 },
-//     {name : "B", Mark : 93 },
-//     {name : "C", Mark : 94 },
-//     {name : "D", Mark : 98 }
-// ]
+const students = [
+    {name : "A", Mark : 98 },
+    {name : "B", Mark : 93 },
+    {name : "C", Mark : 94 },
+    {name : "D", Mark : 98 }
+]
 
-// const res = students.filter(e => e.name === "A" || e.name === "B") ;
-// console.log(res)
-// const marks = res.map( e => console.log(e.Mark));
+const res = students.filter(e => e.name === "A" || e.name === "B") ;
+console.log(res)
+const marks = res.map( e => console.log(e.Mark));
 
 // ---------------------------------------------------------------------------
 
